@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.ui.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="首页"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+
+    </RelativeLayout>
+
+
+ <android.support.v4.view.ViewPager
+     android:id="@+id/VPager"
+     android:layout_width="match_parent"
+     android:layout_weight="9"
+     android:layout_height="0dp"
+
+     ></android.support.v4.view.ViewPager>
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/but1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:button="@null"
+            android:text="展示"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:id="@+id/but2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:button="@null"
+            android:text="展示1"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+    </RadioGroup>
+
+</LinearLayout>
